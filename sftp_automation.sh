@@ -1,5 +1,6 @@
 #!/usr/bin/expect -f
 
+# SPAWN the SFTP command
 spawn sftp test-user@ipaddress
 expect "Enter your XLAB  password:"
 send "password\r"
