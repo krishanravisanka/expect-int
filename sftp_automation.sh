@@ -2,7 +2,7 @@
 
 # SPAWN the SFTP command
 spawn sftp test-user@ipaddress
-expect "Enter your XLAB  password:"
+expect "Enter your LAB  password:"
 send "password\r"
 expect "Press Enter to Continue."
 send "\r"
