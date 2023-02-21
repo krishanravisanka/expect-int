@@ -1,7 +1,11 @@
 #!/usr/bin/expect -f
 
-spawn sftp bucinwci@193.161.176.82
+spawn sftp test-user@ipaddress
 expect "Enter your XLAB  password:"
-send "sl@_Metric5\r"
+send "password\r"
 expect "Press Enter to Continue."
 send "\r"
+
+# Expect SFTP prompt and send command
+expect "sftp>"
+send "ls\r"
